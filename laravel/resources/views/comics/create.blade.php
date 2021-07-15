@@ -7,39 +7,39 @@
 
 <div class="container">
     <h1>ADD A NEW COMIC</h1>
-    <div class="wrapper"></div>
+
     <form action="{{route('comics.store')}}" method="POST">
         @csrf
-        <div>
+        <div class="form_group">
             <label for="title">title</label>
 
             <input type="text" name="title" id="title">
         </div>
 
-        <div>
+        <div class="form_group">
             <label for="author">author</label>
             <input type="text" name="author" id="author">
         </div>
 
-        <div>
+        <div class="form_group">
             <label for="editor">editor</label>
 
             <input type="text" name="editor" id="editor">
         </div>
 
-        <div>
+        <div class="form_group">
             <label for="year">year</label>
 
             <input type="date" name="year" id="year">
         </div>
 
-        <div>
+        <div class="form_group">
             <label for="poster">poster</label>
 
             <input type="text" name="poster" id="poster">
         </div>
 
-        <div>
+        <div class="form_group">
             <label for="overview">overview</label>
 
             <textarea name="overview" id="overview" cols="30" rows="10"></textarea>

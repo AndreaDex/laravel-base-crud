@@ -11,7 +11,7 @@
 
     <div class="card">
         <a href="{{route('comics.show', $comic->id )}}">
-            <img src="{{$comic->poster}}" alt="">
+            <img src="{{$comic->poster}}" alt="{{$comic->title}} poster">
             <h2>{{$comic->title}}</h2>
         </a>
 
@@ -22,7 +22,7 @@
             <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="destroyForm">
                 @method('DELETE')
                 @csrf
-                <input type="submit" value="Delete" />
+                <input class="destroy" type="submit" value="Delete" />
 
             </form>
         </div>

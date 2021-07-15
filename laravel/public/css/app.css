@@ -111,13 +111,47 @@ nav a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.gallery .btn_container .edit {
   background-color: greenyellow;
 }
 
-.gallery .btn_container #destroy {
+.gallery .btn_container .destroy {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   background-color: red;
+}
+
+form .form_group {
+  display: flex;
+  flex-flow: column;
+  padding: 10px 20px;
+}
+
+form button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.show {
+  height: 100%;
+}
+
+.show .info {
+  margin-bottom: 20px;
+}
+
+.show .info p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 5px 0;
 }
 
