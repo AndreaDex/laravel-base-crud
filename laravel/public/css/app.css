@@ -14,9 +14,18 @@ body {
 
 .gallery {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .gallery .card {
   margin: 20px;
+}
+
+.gallery .card img {
+  width: 200px;
+  height: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 

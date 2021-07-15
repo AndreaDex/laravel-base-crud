@@ -13,8 +13,16 @@ body {
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     .card {
         margin: 20px;
+
+        img {
+            width: 200px;
+            height: 280px;
+            object-fit: contain;
+        }
     }
 }

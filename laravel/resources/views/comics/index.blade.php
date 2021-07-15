@@ -14,10 +14,18 @@
             <img src="{{$comic->poster}}" alt="">
             <h3>{{$comic->title}}</h3>
         </a>
-        <p>Autore : {{$comic->author}}</p>
-        <p>Editore : {{$comic->editor}}</p>
-        <p>1° edizione : {{$comic->date}}</p>
-        <p>Trama : {{$comic->overview}}</p>
+
+
+        <a href="{{route('comics.edit', $comic->id)}}"><button>Edit</button></a>
+
+
+        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            @method('DELETE')
+            @csrf
+
+
+            <button type="submit">Delete</button>
+        </form>
     </div>
 
     @endforeach
