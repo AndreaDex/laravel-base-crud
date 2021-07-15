@@ -15,7 +15,11 @@
 
 <body>
     <header id="site_header">
-
+        <nav>
+            <a href="{{route('home')}}">Home</a>
+            <a href="{{route('comics.index')}}">Comics</a>
+            <a href="{{route('comics.create')}}">Add Comics</a>
+        </nav>
     </header>
     <!-- /#site_header -->
     <main id="site_main">

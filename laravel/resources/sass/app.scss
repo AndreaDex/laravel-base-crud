@@ -1,1 +1,20 @@
-//
+/* Common */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+/* MAIN */
+
+.gallery {
+    display: flex;
+
+    .card {
+        margin: 20px;
+    }
+}
