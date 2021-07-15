@@ -10,16 +10,82 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-/* MAIN */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+nav {
+  padding: 30px;
+  background-color: black;
+  text-align: right;
+}
+
+nav a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #e70909;
+}
+
+.jumbotron {
+  background-image: url("https://otakulounge.com/wp-content/uploads/2021/05/Yck5PGouDbUW_SjiZ62z2U8nTA-06bKv_66gcQ_byoM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 85px);
+}
+
+.jumbotron .jumbo_text {
+  color: #ffc107;
+  text-align: center;
+}
+
+.jumbotron .jumbo_text h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.jumbotron .jumbo_text p {
+  font-size: 20px;
+}
+
+#site_footer {
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-image: url("https://i.pinimg.com/originals/fc/98/0b/fc980b6ec648175e3c8ac9e9f1ed57f2.jpg");
+  padding: 30px 0;
+  height: calc(100vh - 85px);
 }
 
 .gallery .card {
   margin: 20px;
+  max-width: 230px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.gallery .card a {
+  color: silver;
+  text-align: center;
 }
 
 .gallery .card img {
@@ -27,5 +93,31 @@ body {
   height: 280px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.gallery .card h2 {
+  margin: 12px 0;
+}
+
+.gallery .btn_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery .btn_container button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery .btn_container .edit {
+  background-color: greenyellow;
+}
+
+.gallery .btn_container #destroy {
+  background-color: red;
 }
 

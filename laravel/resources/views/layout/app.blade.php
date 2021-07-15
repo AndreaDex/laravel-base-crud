@@ -8,7 +8,7 @@
     <title>@yield('title')</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,600,900" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
@@ -27,7 +27,7 @@
     </main>
     <!-- /#site_main -->
     <footer id="site_footer">
-
+        <span>Boolean #35&copy;</span>
     </footer>
     <!-- /#site_footer -->
 </body>

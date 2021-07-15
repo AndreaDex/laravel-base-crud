@@ -4,6 +4,12 @@
 
 @section('content')
 
-<h1>home</h1>
+<div class="jumbotron">
+    <div class="jumbo_text">
+        <h1>Manga Database</h1>
+        <p>Info about your favorite manga</p>
+    </div>
+
+</div>
 
 @endsection
