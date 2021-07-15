@@ -7,7 +7,7 @@
 
 <div class="container">
     <h1>ADD A NEW COMIC</h1>
-
+    <div class="wrapper"></div>
     <form action="{{route('comics.store')}}" method="POST">
         @csrf
         <div>
@@ -48,4 +48,9 @@
     </form>
 </div>
 
+@endsection
+
+@section('js')
+<!-- JS -->
+<script src="{{asset('js/app.js')}}"></script>
 @endsection

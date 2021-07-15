@@ -19380,12 +19380,22 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var btn = document.getElementById("destroy");
-btn.addEventListener("click", confirmDelete());
+var formsDestroy = document.getElementsByClassName("destroyForm");
 
-function confirmDelete() {
-  return confirm("Are your sure ?");
+for (var i = 0; i < formsDestroy.length; i++) {
+  formsDestroy[i].addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (confirm("The manga will be delete definitely. Are you sure ?")) {
+      // alert("confirmed");
+      this.submit();
+    }
+  });
 }
+/* 
+function confirmDelete() {
+    return confirm("Are your sure ?");
+} */
 
 /***/ }),
 

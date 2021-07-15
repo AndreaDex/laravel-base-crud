@@ -19,12 +19,11 @@
             <a href="{{route('comics.edit', $comic->id)}}"><button class="edit">Edit</button></a>
 
 
-            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="destroyForm">
                 @method('DELETE')
                 @csrf
+                <input type="submit" value="Delete" />
 
-
-                <button type="submit" id="destroy">Delete</button>
             </form>
         </div>
     </div>
@@ -33,4 +32,9 @@
 
 </div>
 
+@endsection
+
+@section('js')
+
+<script src="{{asset('js/app.js')}}"></script>
 @endsection
