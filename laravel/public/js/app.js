@@ -19380,6 +19380,13 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var btn = document.getElementById("destroy");
+btn.addEventListener("click", confirmDelete());
+
+function confirmDelete() {
+  return confirm("Are your sure ?");
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

@@ -30,6 +30,8 @@
         <span>Boolean #35&copy;</span>
     </footer>
     <!-- /#site_footer -->
+    <!-- JS -->
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 
 </html>
